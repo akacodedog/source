@@ -10341,7 +10341,7 @@ dropdownSelectors.on({
             }, {
                 key: "_onHTMLClick",
                 value: function(e) {
-                    !$(e.target).closest("#select-options-".concat(this.uuid)).length && !$(e.target).hasClass('mdb-select') && $("#select-options-".concat(this.uuid)).hasClass('active');
+                    !$(e.target).closest("#select-options-".concat(this.uuid)).length && !$(e.target).hasClass('mdb-select') && $("#select-options-".concat(this.uuid)).hasClass('active') && this.$materialSelect.trigger("close");
                 }
             }, {
                 key: "_onToggleAllClick",
